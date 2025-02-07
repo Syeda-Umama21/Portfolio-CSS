@@ -1,0 +1,48 @@
+/* Cntact Section */
+
+.contact{
+    flex-direction: column;
+    padding: 3% 12%;
+}
+
+.contact_form{
+    width: 60%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inuts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.inuts input{
+    width: 100%;
+    height: 50px;
+    background-color: var(--input-color);
+    color: var(--black-color);
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 2%;
+}
+
+.inuts textarea{
+    width: 100%;
+    height: 120px;
+    background-color: var(--input-color);
+    color: var(--black-color);
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 2%;
+}
+

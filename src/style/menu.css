@@ -1,0 +1,12 @@
+.menu_btn {
+    font-size: 2rem;           /* Icon ki size */
+    background: none;          /* No background */
+    border: none;              /* No border */
+    color: var(--prime-color); /* Icon color */
+    cursor: pointer;          /* Pointer cursor on hover */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .menu_btn:hover {
+    transform: scale(1.1);      /* Hover par icon thoda bara ho jayega */
+  }

@@ -1,0 +1,39 @@
+.project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center align karne ke liye */
+}
+
+.project_cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    border:none;
+}
+
+.project_card_img{
+    width: 280px;
+    height: 135px;
+    border: 1px solid rgba(0,0,0,0.3);
+    transition: .3s;
+    overflow: hidden;
+    object-fit: cover;
+    border: 6px solid #033A80;
+
+}
+
+.project_card_img img{
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+.project_card_img:hover img{
+ transform: scale(1.1);
+}

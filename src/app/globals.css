@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default (Light Mode) Variables */
+:root {
+    --prime-color: #033A80;          /* Blue */
+    --second-color: #5805FF;         /* Purple */
+    --head-text: #02A646;            /* Green */
+    --input-color: #ECE5FB;          /* Light Purple */
+    --dark-input: #B799F3;           /* Light Purple */
+    --white-color: #fff;             
+    --black-color: #000;             /* Black */
+    --fix-black: #000;               /* Black */
+    --body-color: #ffffff;           /* White background for light mode */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+} 
+
+
+/* MQ */
+
+
+@media (max-width: 1200px){ 
+
+   .hero_social_icon{
+    display: none;
+  }
+
+  .service_card{
+    width: 100%;
+  }
+  .contact_form{
+    width: 30%;
+  }
+
+}
+
+@media (min-width: 300px) and (max-width: 750px) {
+    
+  
+    .menu_btn{
+        display: block;
+        font-size: 2rem; 
+        margin-right: 40px; 
+        color: #0c0202;      /* Mobile screen ke liye thoda bara icon*/ 
+    }
+
+    .menu_list {
+         display: none;  /*Hide menu by default  */
+        position: absolute;
+        top: 30px;
+        right: 0;
+       
+    }
+
+    .menu_list.show {
+        display: flex; /* Show menu when toggled */
+    } 
+
+    .menu_list ul {
+        flex-direction: column; /* Stack menu items */
+        gap: 15px;
+    }
+
+    .menu_list ul li a {
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-btn{
+      display: none;
+    }
+
+    .nav-btn button{
+        padding: 5px;
+        font-size: small;
+        width: 6rem;
+        height: 3rem;
+        margin-right: 70%;
+    }
+
+    ul{
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        opacity: 0;
+        background-color: var(--fix-white);
+        align-items: flex-start;
+        padding: 10px 12%;
+        width: 100%;
+        flex-direction: column;
+        transition: .3s;
+    }
+
+    ul li a{
+        color: var(--fix-black);
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+    }
+
+    .hero_img{
+        width: 50% !important;
+        height: auto !important;
+        border-radius: 30px;
+        margin-bottom: 23px;
+    }
+    .hero_content{
+        margin-left: 40px;
+    }
+    .hero_social_icon {
+        display: none;
+    }
+    .about_container{
+        width: 100% !important;
+       } 
+
+   .about_image img{
+        display: hidden;
+    }
+
+    .about_content{
+        flex-direction: column; 
+        justify-content: center;
+}
+
+.headings{
+    margin-bottom: 0px;
+}
+
+.about_content p{
+  font-size: 11px;
+  width: 150%;
+  margin: 0px;
+}
+.service_cards{
+    padding: 50px;
+}
+.project_cards{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+    .project_card_img{
+        width: 140%;
+    }
+
+    .contact_form{
+        width: 100%;
+    }   
+}
+
+/* @media (max-width: 740){
+    .menu_list{
+        display: none;
+    }
+} */
+
+/* @media (min-width: 300px) and (max-width: 700px){
+    .hero_social_icon{
+        margin-left: 40px;
+    }
+} */
